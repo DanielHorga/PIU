@@ -10,6 +10,13 @@ namespace PIU
     {
         static void Main(string[] args)
         {
+            var matchTime = new DateTime(2023, 09, 02, 21, 30, 0);
+            Match myMatch = new Match("TeamA", "TeamB", matchTime);
+
+            string homeTeam = myMatch.HomeTeam; 
+            myMatch.AwayTeam = "TeamC"; 
+
+
         }
     }
 }
