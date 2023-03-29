@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Match.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proiect PIU\Match\Match.csproj">
+      <Project>{b61f67aa-f7af-47e6-a9f1-fcfe26b1544f}</Project>
+      <Name>Match</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proiect PIU\Ticket\Ticket.csproj">
+      <Project>{0bf5dd2a-b3c3-4375-b30f-57df319948db}</Project>
+      <Name>Ticket</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
